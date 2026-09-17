@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="闵敏的个人展示平台 —— 上海杉达学院计算机科学与技术本科生，鸿蒙应用开发方向，代表项目「织眸」「师遇」。">
+  <meta name="description" content="闵敏的个人展示平台 —— 上海杉达学院计算机科学与技术本科生，鸿蒙应用开发方向，代表项目「AI 验衣官」「师遇」。">
   <title>闵敏 · 个人展示平台</title>
 
   <style>
@@ -410,6 +410,13 @@
       font-size: 0.8125rem;
       line-height: 1.75;
     }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-4);
+      margin-top: var(--space-4);
+    }
+    .project-grid .project-card { margin-top: 0; }
 
     /* === Cert / competition rows === */
     .cert-list { margin-top: var(--space-4); }
@@ -535,6 +542,7 @@
       }
       .intro-avatar { width: 104px; height: 104px; }
       .skill-grid { grid-template-columns: 1fr; }
+      .project-grid { grid-template-columns: 1fr; }
       .about-grid { grid-template-columns: 1fr; }
       .section { margin-top: var(--space-7); }
     }
@@ -586,7 +594,7 @@
           <p class="intro-kicker">鸿蒙应用开发 · AI 场景创新 · 开源实践</p>
           <h1>闵敏</h1>
           <p class="report-intro__summary">
-            上海杉达学院计算机科学与技术本科生，深耕 HarmonyOS 应用与元服务开发，熟悉计算机视觉与机器学习，致力于推动 AI 技术与鸿蒙生态的场景融合创新——代表项目「织眸」「师遇」。
+            上海杉达学院计算机科学与技术本科生，深耕 HarmonyOS 应用与元服务开发，熟悉计算机视觉与机器学习，致力于推动 AI 技术与鸿蒙生态的场景融合创新——代表项目「AI 验衣官」「师遇」。
           </p>
           <ul class="intro-meta">
             <li>
@@ -640,7 +648,7 @@
             <div class="metric-card">
               <div class="metric-label">场景化应用项目</div>
               <div class="metric-value">3<small>款</small></div>
-              <div class="metric-context">织眸·AI 验衣官、织眸·衣镜、师遇，独立完成全流程落地</div>
+              <div class="metric-context">AI 验衣官、衣镜、师遇，独立完成全流程落地</div>
             </div>
             <div class="metric-card">
               <div class="metric-label">专业认证证书</div>
@@ -702,43 +710,48 @@
 
           <div class="card project-card project-card--featured">
             <div class="project-head">
-              <h3>织眸</h3>
+              <h3>AI 验衣官</h3>
               <span class="project-time">2026.01 – 2026.07</span>
               <span class="tag tag--brand">中国高校人工智能鸿蒙创新赛 · 初赛入围</span>
             </div>
-            <p class="project-subtitle">HarmonyOS AI 穿搭助手 · 「元服务 + 应用」双形态</p>
+            <p class="project-subtitle">HarmonyOS NEXT 元服务 · AI 面料识别与上身效果仿真</p>
             <p class="project-lead">
-              面向网购服饰材质难辨、图片过度修图与日常搭配困难的真实痛点，围绕 HarmonyOS 生态打造 AI 穿搭产品线，覆盖从面料识别到穿搭决策的完整链路。
+              基于 HarmonyOS NEXT 开发面料识别元服务，解决网购服饰材质造假、图片过度修图等消费痛点。搭建远端 AI 识别 + 元服务轻量化交互架构，实现跨应用闪控球截屏导入、面料视觉特征分析、动态上身效果仿真。
             </p>
-
             <div class="project-module">
-              <h4>AI 验衣官 · HarmonyOS NEXT 元服务</h4>
-              <p>
-                搭建远端 AI 识别 + 元服务轻量化交互架构，实现跨应用闪控球截屏导入、面料视觉特征分析与动态上身效果仿真；深度运用鸿蒙跨应用流转、元卡片唤起与 3D 立体动画渲染能力。
-              </p>
+              <h4>核心能力</h4>
+              <p>深度运用鸿蒙跨应用流转、元卡片唤起、3D 立体动画渲染能力，覆盖从截屏导入到上身仿真的完整体验闭环。</p>
             </div>
-            <div class="project-module">
-              <h4>衣镜 · 智能数字衣橱与 AI 穿搭助手</h4>
-              <p>
-                面向衣物闲置与搭配困难场景，支持衣物拍照数字化入库、天气联动 AI 穿搭推荐与 AI 虚拟试衣预览；采用端云协同方案——端侧 HiAI 负责图像预处理，云端完成穿搭方案生成。
-              </p>
-            </div>
-
             <div class="tag-row">
-              <span class="tag">HarmonyOS NEXT</span><span class="tag">元服务</span><span class="tag">ArkTS</span><span class="tag">端云协同</span><span class="tag">HiAI</span><span class="tag">计算机视觉</span>
+              <span class="tag">HarmonyOS NEXT</span><span class="tag">元服务</span><span class="tag">ArkTS</span><span class="tag">跨应用流转</span><span class="tag">3D 动画渲染</span><span class="tag">计算机视觉</span>
             </div>
           </div>
 
-          <div class="card project-card">
-            <div class="project-head">
-              <h3>师遇</h3>
+          <div class="project-grid">
+            <div class="card project-card">
+              <div class="project-head">
+                <h3>衣镜</h3>
+              </div>
+              <p class="project-subtitle">智能数字衣橱与 AI 穿搭助手 · 鸿蒙应用</p>
+              <p class="project-lead">
+                面向衣物闲置、搭配困难的日常穿搭场景开发。实现衣物拍照数字化入库、天气联动 AI 穿搭推荐、AI 虚拟试衣预览；采用端云协同方案——端侧 HiAI 负责图像预处理，云端完成穿搭方案生成。
+              </p>
+              <div class="tag-row">
+                <span class="tag">鸿蒙应用</span><span class="tag">端云协同</span><span class="tag">HiAI</span><span class="tag">虚拟试衣</span>
+              </div>
             </div>
-            <p class="project-subtitle">无中介的家教双向匹配平台</p>
-            <p class="project-lead">
-              借鉴招聘平台交互模式的双向家教对接平台：家长端发布家教需求，教师端检索岗位并投递简历；内置实时聊天模块，供需双方直接在线沟通授课事宜，省去中介环节。
-            </p>
-            <div class="tag-row">
-              <span class="tag">双向匹配</span><span class="tag">实时聊天</span><span class="tag">需求发布</span><span class="tag">简历投递</span>
+
+            <div class="card project-card">
+              <div class="project-head">
+                <h3>师遇</h3>
+              </div>
+              <p class="project-subtitle">无中介的家教双向匹配平台</p>
+              <p class="project-lead">
+                借鉴招聘平台交互模式的双向家教对接平台：家长端发布家教需求，教师端检索岗位并投递简历；内置实时聊天模块，供需双方直接在线沟通授课事宜。
+              </p>
+              <div class="tag-row">
+                <span class="tag">双向匹配</span><span class="tag">实时聊天</span><span class="tag">需求发布</span><span class="tag">简历投递</span>
+              </div>
             </div>
           </div>
         </section>
